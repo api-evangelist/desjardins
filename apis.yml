@@ -37,16 +37,30 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: VulnerabilityDisclosure
+  url: security/desjardins-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/desjardins-domain-security.yml
 - type: Website
   url: https://www.desjardins.com/
 - type: LinkedIn
   url: https://ca.linkedin.com/company/desjardins
+- type: Blog
+  url: https://blogues.desjardins.com/
 - type: PrivacyPolicy
   url: https://www.desjardins.com/ca/privacy/index.jsp
+- type: TermsOfService
+  url: https://www.desjardins.com/en/terms-use-legal-notes.html
 - type: Security
   url: https://www.desjardins.com/en/security.html
 - type: Support
   url: https://www.desjardins.com/en/contact-us.html
+- type: WellKnown
+  url: well-known/desjardins-well-known.yml
+- type: SecurityTxt
+  url: well-known/desjardins-security.txt
+- type: LLMsTxt
+  url: llms/desjardins-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

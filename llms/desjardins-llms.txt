@@ -1,0 +1,31 @@
+# Desjardins Group
+
+> Desjardins Group (Mouvement Desjardins) is the largest cooperative financial group in North America, founded in 1900 in Lévis, Quebec. It is a federation of member-owned caisses populaires (credit unions) — the Fédération des caisses Desjardins du Québec and its subsidiaries — regulated in Quebec by the Autorité des marchés financiers (AMF), with roughly CAD $470 billion in assets and more than 7.8 million members and clients across personal, business, wealth-management, and insurance products.
+
+## API availability
+
+> Desjardins publishes no first-party public developer portal or downloadable API specification. developer.desjardins.com and other API-portal subdomains do not resolve, and api.desjardins.com returns no machine-readable contract (no OpenAPI/Swagger, GraphQL, AsyncAPI, or MCP surface was found on any host as of 2026-07-23). Consumer financial-data access is delivered today through third-party aggregators (Flinks, Plaid, Finicity, Tink) via aggregator/screen-scraping connectivity rather than a documented Desjardins API. Canada's Consumer-Driven Banking (open-banking) framework is legislated (Budget 2024/2025, overseen by the FCAC) but not yet operational; as a cooperative outside the Big Six, Desjardins may opt in to Phase 1 rather than being mandated.
+
+## Company
+
+- [Website](https://www.desjardins.com/): Desjardins Group corporate site
+- [About us](https://www.desjardins.com/ca/about-us/index.jsp): Cooperative structure, history, and governance
+- [Blog (Blogues Desjardins)](https://blogues.desjardins.com/): Desjardins financial-education and news blog
+- [Careers](https://www.desjardins.com/qc/en/careers.html): Desjardins careers portal
+- [LinkedIn](https://ca.linkedin.com/company/desjardins): Company profile
+
+## Security
+
+- [security.txt](https://www.desjardins.com/.well-known/security.txt): RFC 9116 disclosure contact
+- [Responsible vulnerability disclosure](https://www.desjardins.com/securite/signalement-vulnerabilite-potentielle/index.jsp): Report a potential vulnerability (contact: divulgation-responsable@desjardins.com)
+- [Security](https://www.desjardins.com/en/security.html): Security practices and fraud prevention
+
+## Legal
+
+- [Terms of Use and Legal Notes](https://www.desjardins.com/en/terms-use-legal-notes.html): Terms governing use of Desjardins.com
+- [Privacy](https://www.desjardins.com/ca/privacy/index.jsp): Privacy policy
+
+## Third-party access
+
+- [Plaid: Desjardins](https://plaid.com/institutions/desjardins/): Aggregator connectivity to Desjardins accounts
+- [Open Banking Tracker: Desjardins](https://www.openbankingtracker.com/provider/desjardins): Open-banking coverage profile
