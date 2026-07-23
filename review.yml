@@ -1,0 +1,82 @@
+aid: desjardins
+name: Desjardins Group
+review:
+  question: Does Desjardins Group expose a first-party public developer API portal or downloadable API specification?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Desjardins Group, the largest cooperative financial group in North America
+    (a federation of caisses populaires / member-owned credit unions, regulated
+    in Quebec by the Autorité des marchés financiers), publishes NO first-party
+    public developer portal and NO downloadable OpenAPI/Swagger specification.
+    Probing common portal patterns returned no live developer surface:
+    developer.desjardins.com, developers.desjardins.com, apis.desjardins.com and
+    apianddata.desjardins.com do not resolve (connection/DNS failure, HTTP 000);
+    api.desjardins.com resolves through Akamai but returns HTTP 404 and is an
+    internal application backend, not a documented API. The public site
+    www.desjardins.com returns HTTP 200 but exposes only marketing, member
+    tools and legal/privacy content — no API reference, no spec, no onboarding.
+
+    Access to Desjardins account data today is AGGREGATOR-BASED, not first-party:
+    Open Banking Tracker and aggregator coverage pages list Desjardins as reachable
+    via Flinks (a Canadian aggregator), Plaid, Finicity and Tink using
+    aggregator/screen-scraping connectivity. No first-party Desjardins API product
+    is listed anywhere.
+
+    Regulatory posture: Canada's Consumer-Driven Banking framework (the national
+    open-banking regime, legislated in Budget 2024/2025 and overseen by the
+    Financial Consumer Agency of Canada, FCAC) is legislated but NOT yet
+    operational. The Big Six banks must support Phase 1; as a cooperative outside
+    the Big Six, Desjardins may OPT IN rather than being mandated. No FDX
+    participation is documented, and there is no US Section 1033 posture (this is
+    the Canadian cooperative entity). No public authentication model (OAuth2/OIDC,
+    API key, or mTLS) is documented because no public API is offered.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalUrl: ""
+    portalHttpStatus: "000 (developer.desjardins.com does not resolve)"
+    downloadableSpec: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: not-applicable (Canadian entity)
+    consumerDrivenBanking: legislated-not-operational; optional opt-in for cooperatives outside the Big Six
+    dataAccessModel: aggregator-only (Flinks, Plaid, Finicity, Tink)
+    authModel: none-documented
+    charter: financial-services cooperative / caisse populaire federation (AMF-regulated, Quebec)
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API is documented. api.desjardins.com resolves (Akamai) but returns HTTP 404 and is an internal app backend, not a published developer API.
+    - protocol: OpenAPI
+      documented: false
+      note: No downloadable OpenAPI/Swagger specification is published by Desjardins.
+sources:
+  - url: https://www.desjardins.com/
+    type: Website
+    note: Public corporate site, HTTP 200. Marketing, member tools, legal/privacy only — no developer/API surface.
+  - url: https://developer.desjardins.com/
+    type: DeveloperPortalProbe
+    note: Does not resolve (HTTP 000). No first-party developer portal at the conventional subdomain.
+  - url: https://api.desjardins.com/
+    type: APIHostProbe
+    note: Resolves via Akamai edge but returns HTTP 404; internal application backend, not a documented API.
+  - url: https://www.openbankingtracker.com/provider/desjardins
+    type: ThirdPartyResearch
+    note: Lists no first-party Desjardins API; access via aggregators Flinks, Plaid, BankSync/Tink.
+  - url: https://plaid.com/institutions/desjardins/
+    type: ThirdPartyResearch
+    note: Confirms Desjardins reachable through Plaid (Assets, Auth, Balance) via aggregator connectivity.
+  - url: https://www.canada.ca/en/department-finance/programs/financial-sector-policy/open-banking-implementation/budget-2025-canadas-framework-for-consumer-driven-banking.html
+    type: RegulatoryReference
+    note: Canada's Consumer-Driven Banking framework — legislated, not yet operational; Big Six mandated, cooperatives may opt in.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only (built-stub) record. Desjardins exposes no public first-party
+    API and no downloadable spec, so apis[] is empty; the honest open-finance
+    reality (aggregator-only access plus optional, not-yet-live participation in
+    Canada's Consumer-Driven Banking framework) is captured in the description
+    and in this review. No OpenAPI was harvested because none is published.

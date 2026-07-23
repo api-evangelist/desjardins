@@ -1,0 +1,52 @@
+aid: desjardins
+url: https://raw.githubusercontent.com/api-evangelist/desjardins/refs/heads/main/apis.yml
+name: Desjardins Group
+kind: company
+description: >-
+  Desjardins Group (Mouvement Desjardins) is the largest cooperative financial
+  group in North America, founded in 1900 in Lévis, Quebec by Alphonse
+  Desjardins. It is a federation of caisses populaires (member-owned credit
+  unions) rather than a share-capital chartered bank, comprising the Fédération
+  des caisses Desjardins du Québec and its subsidiaries, the caisses in Quebec
+  and the Caisse Desjardins Ontario Credit Union, regulated in Quebec by the
+  Autorité des marchés financiers (AMF). It holds roughly CAD $470 billion in
+  assets and serves more than 7.8 million members and clients with personal,
+  business, wealth-management and insurance products. On open finance,
+  Desjardins publishes no first-party public developer portal or downloadable
+  API specification; developer.desjardins.com and other API-portal subdomains do
+  not resolve, and consumer financial-data access is delivered today through
+  third-party aggregators (Flinks, Plaid, Finicity, Tink) via
+  screen-scraping/aggregator connectivity rather than a documented Desjardins
+  API. Canada's Consumer-Driven Banking (open-banking) framework is legislated
+  (Budget 2024/2025, overseen by the FCAC) but not yet operational; as a
+  cooperative outside the Big Six, Desjardins may opt in to Phase 1 rather than
+  being mandated.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Credit Union
+- Caisse Populaire
+- Cooperative
+- Consumer-Driven Banking
+- Data Aggregation
+- Quebec
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.desjardins.com/
+- type: LinkedIn
+  url: https://ca.linkedin.com/company/desjardins
+- type: PrivacyPolicy
+  url: https://www.desjardins.com/ca/privacy/index.jsp
+- type: Security
+  url: https://www.desjardins.com/en/security.html
+- type: Support
+  url: https://www.desjardins.com/en/contact-us.html
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
