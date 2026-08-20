@@ -23,6 +23,16 @@ description: >-
   being mandated.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Credit Union
+- Caisse Populaire
+- Cooperative
+- Consumer-Driven Banking
+- Data Aggregation
+- Quebec
+tags_raw:
 - Financial Services
 - Banking
 - Canada
