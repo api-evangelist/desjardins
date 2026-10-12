@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/desjardins/integrations
+- https://zapier.com/apps/desjardins-group/integrations
+- https://n8n.io/integrations/desjardins/
+- https://composio.dev/toolkits/desjardins
+- https://monid.ai/tools/desjardins
+checked:
+- https://composio.dev/toolkits/desjardins
+- https://monid.ai/tools/desjardins
+- https://n8n.io/integrations/desjardins/
+- https://zapier.com/apps/desjardins-group/integrations
+- https://zapier.com/apps/desjardins/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
