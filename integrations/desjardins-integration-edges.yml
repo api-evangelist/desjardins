@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/desjardins/integrations
 - https://zapier.com/apps/desjardins-group/integrations
@@ -10,9 +10,34 @@ checked:
 - https://composio.dev/toolkits/desjardins
 - https://monid.ai/tools/desjardins
 - https://n8n.io/integrations/desjardins/
+- https://registry.financialdataexchange.org/
 - https://zapier.com/apps/desjardins-group/integrations
 - https://zapier.com/apps/desjardins/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: FDX (Financial Data Exchange)
+  partner: fdx
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registry.financialdataexchange.org/
+  contract_reference:
+    register: FDX Registry
+    standard: FDX API
+    spec_file: null
+    register_api: https://registry.financialdataexchange.org/fdxregistryapi/organizations/search/listingTags
+    role: data-provider
+    member_type: MEMBER
+    registered_name: Desjardins
+    register_id: 117
+    registered_website: www.desjardins.com
+    country: Canada
+    fdx_version: null
+    matched_by: domain:desjardins.com
+    detected_by: sweep-fdx.py
+    detected: '2026-10-14'
+  detected_by: sweep-fdx.py
+  first_seen: '2026-10-14'
 templates: []
