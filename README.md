@@ -1,4 +1,4 @@
-# Desjardins Group (desjardins)
+# Desjardins Group
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,48 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Desjardins Group (Mouvement Desjardins) is the largest cooperative financial group in North America, founded in 1900 in Lévis, Quebec by Alphonse Desjardins. It is a federation of caisses populaires (member-owned credit unions) rather than a share-capital chartered bank, comprising the Fédération des caisses Desjardins du Québec and its subsidiaries, the caisses in Quebec and the Caisse Desjardins Ontario Credit Union, regulated in Quebec by the Autorité des marchés financiers (AMF). It holds roughly CAD $470 billion in assets and serves more than 7.8 million members and clients across Quebec, Ontario and beyond.
+Desjardins Group (Mouvement Desjardins) is the largest cooperative financial group in North America, founded in 1900 in Lévis, Quebec by Alphonse Desjardins. It is a federation of caisses populaires (member-owned credit unions) rather than a share-capital chartered bank, comprising the Fédération des caisses Desjardins du Québec and its subsidiaries, the caisses in Quebec and the Caisse Desjardins Ontario Credit Union, regulated in Quebec by the Autorité des marchés financiers (AMF). It holds roughly CAD $470 billion in assets and serves more than 7.8 million members and clients with personal, business, wealth-management and insurance products. On open finance, Desjardins publishes no first-party public developer portal or downloadable API specification; developer.desjardins.com and other API-portal subdomains do not resolve, and consumer financial-data access is delivered today through third-party aggregators (Flinks, Plaid, Finicity, Tink) via screen-scraping/aggregator connectivity rather than a documented Desjardins API. Canada's Consumer-Driven Banking (open-banking) framework is legislated (Budget 2024/2025, overseen by the FCAC) but not yet operational; as a cooperative outside the Big Six, Desjardins may opt in to Phase 1 rather than being mandated.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/desjardins/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/desjardins/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Credit Union · Caisse Populaire · Cooperative · Consumer-Driven Banking · Quebec
 
-## Open Finance & API Posture
+## Desjardins Group on APIs.io
 
-Desjardins does **not** publish a first-party public developer portal or a downloadable OpenAPI/Swagger specification. Portal candidates such as `developer.desjardins.com`, `developers.desjardins.com`, `apis.desjardins.com` and `apianddata.desjardins.com` do not resolve (DNS/connection failures); `api.desjardins.com` resolves via Akamai but returns HTTP 404 and is an internal app backend, not documented developer surface.
+Everything profiled for Desjardins Group is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/desjardins/](https://apis.io/providers/desjardins/)** — or go straight to one of the APIs or properties below.
 
-Consumer financial-data access to Desjardins accounts is delivered today through **third-party aggregators** — Flinks (a Canadian aggregator), Plaid, Finicity and Tink — using aggregator/screen-scraping connectivity rather than a documented Desjardins API. Open Banking Tracker lists no first-party Desjardins API products.
+### Published properties
 
-Canada's **Consumer-Driven Banking** framework (the country's open-banking regime, legislated in Budget 2024 / Budget 2025 and overseen by the Financial Consumer Agency of Canada, FCAC) is legislated but **not yet operational**. The Big Six banks must support Phase 1; as a cooperative outside the Big Six, Desjardins **may opt in** rather than being mandated. No FDX participation and no downloadable spec are documented for Desjardins as of this review. There is no US-style Section 1033 posture — this is the Canadian entity.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (2)
 
-- Financial Services
-- Banking
-- Canada
-- Credit Union
-- Caisse Populaire
-- Cooperative
-- Consumer-Driven Banking
-- Data Aggregation
-- Quebec
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Desjardins Domain Security](https://apis.io/security/desjardins/desjardins-domain-security/)
+- [Desjardins Vulnerability Disclosure](https://apis.io/security/desjardins/desjardins-vulnerability-disclosure/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-No public first-party API is documented. This is an identity-only (built-stub) record: consumer data access is aggregator-only, and Desjardins' participation in Canada's coming Consumer-Driven Banking framework is optional and not yet live.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.desjardins.com/)
-- [LinkedIn](https://ca.linkedin.com/company/desjardins)
-- [Privacy Policy](https://www.desjardins.com/ca/privacy/index.jsp)
-- [Security](https://www.desjardins.com/en/security.html)
 - [Support](https://www.desjardins.com/en/contact-us.html)
+- [Blog](https://blogues.desjardins.com/)
+- [Security](https://www.desjardins.com/en/security.html)
+- [Terms of service](https://www.desjardins.com/en/terms-use-legal-notes.html)
+- [Privacy policy](https://www.desjardins.com/ca/privacy/index.jsp)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 11.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/desjardins/](https://apis.io/providers/desjardins/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Desjardins Group: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/desjardins/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
